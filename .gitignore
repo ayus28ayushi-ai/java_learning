@@ -1,17 +1,10 @@
-# Ignore build/bin/junk
-target/
-bin/
-build/
-.settings/
-.classpath
-.project
-.metadata/
-.idea/
-*.class
-*.jar
-*.iml
-*.iws
-*.ipr
-
-# Ignore the nested repo folder
-java_learning/
+# Ignore IDE and Build Junk
+**/target/
+**/bin/
+**/.settings/
+**/.classpath
+**/.project
+**/.metadata/
+**/.idea/
+**/*.class
+**/*.jar
