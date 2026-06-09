@@ -1,10 +1,19 @@
 "src/module-info.java" 
-# Ignore everything else
+# 1. Ignore everything by default
 *
-# But allow the specific folders AND their contents
-!spring_framework_basics/
-spring_framework_basics/**
-!spring_framework_basics2/
-spring_framework_basics2/**
-# Also allow the gitignore file itself
+
+# 2. But whitelist the folders we want to track
+!/src/
+!/spring_framework_basics/
+!/spring_framework_basics2/
 !.gitignore
+
+# 3. Now ignore the junk inside those folders
+**/target/
+**/.settings/
+**/.classpath
+**/.project
+**/.metadata/
+**/.idea/
+**/*.class
+**/*.jar
