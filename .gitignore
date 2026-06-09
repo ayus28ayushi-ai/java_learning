@@ -1,20 +1,17 @@
-# Ignore everything by default
-*
+# Ignore build/bin/junk
+target/
+bin/
+build/
+.settings/
+.classpath
+.project
+.metadata/
+.idea/
+*.class
+*.jar
+*.iml
+*.iws
+*.ipr
 
-# Whitelist source code
-!/src/
-!/spring_framework_basics/
-!/spring_framework_basics2/
-!.gitignore
-
-# Ignore IDE/Build junk recursively
-**/.settings/
-**/.classpath
-**/.project
-**/.metadata/
-**/.idea/
-**/*.class
-**/*.jar
-**/target/
-**/bin/
-**/build/
+# Ignore the nested repo folder
+java_learning/
