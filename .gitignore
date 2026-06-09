@@ -1,8 +1,10 @@
 "src/module-info.java" 
 # Ignore everything else
 *
-# But allow these specific folders
+# But allow the specific folders AND their contents
 !spring_framework_basics/
+spring_framework_basics/**
 !spring_framework_basics2/
+spring_framework_basics2/**
 # Also allow the gitignore file itself
 !.gitignore
