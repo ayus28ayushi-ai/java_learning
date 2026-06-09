@@ -1,15 +1,13 @@
-"src/module-info.java" 
-# 1. Ignore everything by default
+# Ignore everything by default
 *
 
-# 2. But whitelist the folders we want to track
+# Whitelist source code
 !/src/
 !/spring_framework_basics/
 !/spring_framework_basics2/
 !.gitignore
 
-# 3. Now ignore the junk inside those folders
-**/target/
+# Ignore IDE/Build junk recursively
 **/.settings/
 **/.classpath
 **/.project
@@ -17,3 +15,6 @@
 **/.idea/
 **/*.class
 **/*.jar
+**/target/
+**/bin/
+**/build/
